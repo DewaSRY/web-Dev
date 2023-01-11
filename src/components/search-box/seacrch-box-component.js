@@ -1,18 +1,15 @@
-import { Component } from "react";
 import "./search-box.css";
-class SeacrhBox extends Component {
-  render() {
-    const { search, className, placeholder } = this.props;
+const SeacrhBox = (props) => {
+  const { search, className, placeholder } = props;
 
-    return (
-      <input
-        className={className}
-        type="search"
-        placeholder={placeholder}
-        onChange={search}
-      />
-    );
-  }
-}
+  return (
+    <input
+      className={className}
+      type="search"
+      placeholder={placeholder}
+      onChange={search}
+    />
+  );
+};
 
 export default SeacrhBox;
